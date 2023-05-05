@@ -29,6 +29,7 @@ if(Nb==1)
 else
     result=inputdlg({'请输入权向量w:'},'charpt_3',1,{'[1 1 1 1 1 1 1]'});
     w=str2double(char(result));
+    w=[1 1 1 1 1 1 1];
     [a,b,c,alpha,r]=dlsa(x0,y0,w,n);
 end
 disp(['平方误差：',sprintf('%g',r)]);
@@ -50,7 +51,7 @@ end
 s1=0; s2=ones(1,m+1); v2=sum(w);
 d(1)=y*w'; c(1)=d(1)/v2;
 for k=1:n
-    s=x.*s2.^2*w';
+    xs=x.*s2.^2*w';
     a(k)=xs/v2;
     if(k==1)
         b(k)=0;
