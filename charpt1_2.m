@@ -1,5 +1,4 @@
-function  t_charpt1_2
-
+function  charpt1_2
 %% 选择递推关系式
 options = {'E.1.6', 'E.1.7'};
 equation = listdlg( ...

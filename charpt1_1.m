@@ -1,4 +1,4 @@
-function t_charpt1_1
+function charpt1_1
 
 result = inputdlg({'请输入扰动项：在[0 20]之间的整数'},'charpt 1_1', 1, {'19'});
 Numb = str2double(char(result));
