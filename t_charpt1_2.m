@@ -65,6 +65,6 @@ grid on
 hold on;
 plot(1:steps, err, 'r--');
 xlabel('n');
-ylabel('En-and ERR n--');
+ylabel('En- and ERR n--');
 text(2, err(2), '\uparrow err(n)');
 text(4, result(4), '\downarrow En');
